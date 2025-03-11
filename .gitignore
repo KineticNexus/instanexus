@@ -1,3 +1,8 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
 # Python
 __pycache__/
 *.py[cod]
@@ -20,22 +25,10 @@ wheels/
 .installed.cfg
 *.egg
 
-# Logs
-*.log
-logs/
-analytics_charts/
-generated_content/
-
-# Environment
-.env
-.venv
-env/
+# Virtual Environment
 venv/
+env/
 ENV/
-
-# Session files
-web_interface_session.json
-scheduler_config.json
 
 # IDE
 .idea/
@@ -43,6 +36,21 @@ scheduler_config.json
 *.swp
 *.swo
 
-# OS
+# Logs
+*.log
+content_generator.log
+
+# Generated content
+src/web_interface/static/generated_images/
+src/web_interface/static/fallback_images/
+
+# Session files
+web_interface_session.json
+scheduler_config.json
+
+# Node modules
+node_modules/
+
+# System files
 .DS_Store
 Thumbs.db
